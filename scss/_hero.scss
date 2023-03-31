@@ -24,5 +24,9 @@
   &__text{
     position: relative;
     border: 5px solid rgb(0, 255, 238);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
   }
 }
