@@ -1,1 +1,6 @@
-
+.feature{
+  padding-top: 100px;
+    &__grid{
+      display: flex;
+    }
+}

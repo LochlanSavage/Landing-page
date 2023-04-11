@@ -1,45 +1,49 @@
 .hero {
 
-  position: relative;
-  z-index: 0;
-  overflow: hidden;
-
-  &__image {
+  &__background {
       width:100%;
-      height:100%;
+      height:350px;
+
       top: 0;
       left: 0;
-      position:absolute;
+      position:relative;
       z-index: -1;
       background-image: linear-gradient(#8459f9, #4c3196);
       border-top-left-radius:10px;
       border-top-right-radius:10px;
       border-bottom-left-radius: 50% 20%;
       border-bottom-right-radius: 50% 20%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
-    &::before {
+    &__image{
       content: "";
-      position: absolute;
-      z-index: -2;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
+      z-index: 10;
+      position:absolute;
+      top: 100%;
+      left: 50%;
+      margin: 0 auto;
+      transform: translate(-50%, -50%);
+      aspect-ratio: 767/441;
+      height: 200px;
+      width: auto;
       background-image: url('/assets/images/image-hero.webp');
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center center;
-
     }
-
 
     &__text{
       position: relative;
-      border: 5px solid rgb(0, 255, 238);
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
+      font-family: "EB Garamond", Helvetica, Arial, sans-serif;
+      font-weight: bold;
+      font-size: 36px;
 
     }
 }
