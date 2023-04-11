@@ -20,7 +20,7 @@
 }
 
 .feature {
-  padding-top: 100px;
+  padding-top: 180px;
 }
 .feature__grid {
   display: -webkit-box;
@@ -57,7 +57,7 @@
   position: absolute;
   top: 100%;
   left: 50%;
-  margin: 0 auto;
+  margin: 20px auto 20px auto;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   aspect-ratio: 767/441;
@@ -83,7 +83,11 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
   font-family: "EB Garamond", Helvetica, Arial, sans-serif;
   font-weight: bold;
   font-size: 36px;
+}
+.hero__text u {
+  text-decoration-color: #135d3a;
 }/*# sourceMappingURL=main.css.map */
