@@ -1,7 +1,32 @@
+
 .feature{
   padding-top: 180px;
-    &__grid{
-      display: flex;
-    }
+  &__grid{
+    display: flex;
+    margin-bottom: 60px;
+  }
+  &__number{
+    text-align: center;
+    border-radius: 50%;
+    border: 2px solid #8459f9;
+    font-size: 24px;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0 auto;
 
+  }
+  &__item{
+    text-align: center;
+  }
+  &__title{
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  &__description{
+    font-size: 12px;
+  }
 }
