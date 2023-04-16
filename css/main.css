@@ -121,10 +121,16 @@
 .hero__text u {
   text-decoration-color: #135d3a;
 }
+.hero__learn-more-b {
+  margin: 40px;
+}
 
 .banner {
   text-align: center;
   background-color: #8459f9;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 0 100px;
 }
 
 .banner p {
@@ -132,4 +138,18 @@
   padding: 10px;
   margin: 0 140px;
   font-family: "EB Garamond", Helvetica, Arial, sans-serif;
+}
+
+.banner-b {
+  margin: 40px;
+}
+
+.footer {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer a {
+  margin: 40px;
 }/*# sourceMappingURL=main.css.map */
