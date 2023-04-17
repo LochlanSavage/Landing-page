@@ -152,4 +152,15 @@
 
 .footer a {
   margin: 40px;
+}
+
+.footing-logo {
+  display: block;
+  text-align: center;
+}
+
+.founder-image {
+  height: 200px;
+  width: 200px;
+  margin-left: 150px;
 }/*# sourceMappingURL=main.css.map */
