@@ -1,4 +1,39 @@
-header{
 
-  
+.burger-menu {
+  display: flex;
+  align-items: center;
+}
+.burger-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 25px;
+  cursor: pointer;
+}
+.burger-icon span {
+  background: #000;
+  height: 4px;
+  width: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+.burger-menu-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #fff;
+  padding: 10px;
+  width: 150px;
+}
+
+.burger-menu-content.show {
+  display: block;
+}
+
+.burger-menu-content a {
+  display: block;
+  padding: 5px 0;
+  color: #000;
+  text-decoration: none;
 }
