@@ -79,7 +79,9 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 30px;
-  height: 25px;
+  height: 30px;
+  margin-right: 10px;
+  max-width: calc(100% - 10px);
   cursor: pointer;
 }
 
@@ -93,6 +95,18 @@
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
+.burger-icon .close-icon {
+  /* Added styles for the close icon */
+  background: #000;
+  height: 4px;
+  width: 100%;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  opacity: 0; /* Hide the close icon initially */
+}
+
 .burger-menu-content {
   display: none;
   position: absolute;
@@ -100,7 +114,7 @@
   right: 0;
   background-color: #fff;
   padding: 10px;
-  width: 150px;
+  width: 200px;
 }
 
 .burger-menu-content.show {
@@ -115,8 +129,8 @@
 }
 
 .burger-icon.active span:nth-child(1) {
-  -webkit-transform: rotate(45deg) translate(2px, 2px);
-          transform: rotate(45deg) translate(2px, 2px);
+  -webkit-transform: rotate(45deg) translate(9px, 8px);
+          transform: rotate(45deg) translate(9px, 8px);
 }
 
 .burger-icon.active span:nth-child(2) {
@@ -124,8 +138,8 @@
 }
 
 .burger-icon.active span:nth-child(3) {
-  -webkit-transform: rotate(-45deg) translate(2px, -2px);
-          transform: rotate(-45deg) translate(2px, -2px);
+  -webkit-transform: rotate(-45deg) translate(9px, -8px);
+          transform: rotate(-45deg) translate(9px, -8px);
 }
 
 .hero__background {
