@@ -25,15 +25,21 @@
   background: #000;
   height: 4px;
   width: 100%;
+  position: absolute;
   transition: transform 0.3s ease-in-out;
   opacity: 0; /* Hide the close icon initially */
 }
+
+.burger-icon.active .close-icon {
+  transform: rotate(45deg) translate(9px, -8px); /* Rotate and position the close icon */
+  opacity: 1; /* Show the close icon when the active class is present */
+}
 .burger-menu-content {
   display: none;
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
-  background-color: #fff;
+  background-color: #7c2929;
   padding: 10px;
   width: 200px;
 }
