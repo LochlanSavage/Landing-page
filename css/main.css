@@ -221,13 +221,14 @@
   background-color: #8459f9;
   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin: 0 100px;
+  margin: 0 80%;
+  border-radius: 10px;
 }
 
 .banner p {
   display: inline-block;
   padding: 10px;
-  margin: 0 140px;
+  margin: 0 5%;
   font-family: "EB Garamond", Helvetica, Arial, sans-serif;
 }
 
@@ -235,6 +236,14 @@
   margin: 40px;
 }
 
+@media (max-width: 600px) {
+  .banner {
+    word-wrap: break-word;
+    width: 90%;
+    padding: 0 5%;
+    margin: 0px;
+  }
+}
 .footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
